@@ -1,0 +1,182 @@
+[
+  {
+    "image": "https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png",
+    "title": "Instagram",
+    "companyName": "Meta",
+    "id": 1,
+    "description": "Photo & video sharing social networking app.",
+    "size": 78,
+    "reviews": 2500000,
+    "ratingAvg": 4.7,
+    "downloads": "2000M",
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 1530000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s",
+    "title": "Facebook",
+    "companyName": "Meta",
+    "id": 2,
+    "description": "Connect with friends and family.",
+    "size": 95,
+    "reviews": 3000000,
+    "ratingAvg": 4.3,
+    "downloads": "2500M",
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 1850000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/6am0i3walYwNLc08QOOhRJttQENNGkhlKajXSERf3JnPVRQczIyxw2w3DxeMRTOSdsY=w240-h480-rw",
+    "title": "YouTube",
+    "companyName": "Google",
+    "id": 3,
+    "description": "Watch, upload, and share videos.",
+    "size": 120,
+    "reviews": 4000000,
+    "ratingAvg": 4.8,
+    "downloads": "3000M",
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 3040000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN",
+    "title": "WhatsApp",
+    "companyName": "Meta",
+    "id": 4,
+    "description": "Instant messaging and calling app.",
+    "size": 67,
+    "reviews": 3500000,
+    "ratingAvg": 4.7,
+    "downloads": "2500M",
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 2550000 }
+    ]
+  },
+  {
+    "image": "https://sf-static.tiktokcdn.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 5,
+    "description": "Short videos and social entertainment.",
+    "size": 98,
+    "reviews": 2800000,
+    "ratingAvg": 4.5,
+    "downloads": "1800M",
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 1930000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 6,
+    "description": "Send photos and videos that disappear after viewing.",
+    "size": 75,
+    "reviews": 1200000,
+    "ratingAvg": 4.2,
+    "downloads": "1000M",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 830000 }
+    ]
+  },
+  {
+    "image": "https://m.media-amazon.com/images/I/51rttY7a+9L.png",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 7,
+    "description": "Stream millions of songs and podcasts.",
+    "size": 110,
+    "reviews": 1500000,
+    "ratingAvg": 4.6,
+    "downloads": "1200M",
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 40000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1045000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 8,
+    "description": "Secure messaging app with cloud-based chats.",
+    "size": 65,
+    "reviews": 800000,
+    "ratingAvg": 4.5,
+    "downloads": "700M",
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 623000 }
+    ]
+  },
+  {
+    "image": "https://m.media-amazon.com/images/I/31epF-8N9LL.png",
+    "title": "Amazon",
+    "companyName": "Amazon",
+    "id": 9,
+    "description": "Shop millions of products online.",
+    "size": 130,
+    "reviews": 2000000,
+    "ratingAvg": 4.6,
+    "downloads": "1500M",
+    "ratings": [
+      { "name": "1 star", "count": 25000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1425000 }
+    ]
+  },
+  {
+    "image": "https://cdn.pixabay.com/photo/2016/11/04/14/13/google-maps-1797882_1280.png",
+    "title": "Google Maps",
+    "companyName": "Google",
+    "id": 10,
+    "description": "Navigate with maps, traffic, and local info.",
+    "size": 90,
+    "reviews": 1800000,
+    "ratingAvg": 4.7,
+    "downloads": "2000M",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1355000 }
+    ]
+  }
+]
