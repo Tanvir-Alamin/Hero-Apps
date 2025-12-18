@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const useApps = () => {
@@ -6,9 +7,13 @@ const useApps = () => {
   const [error, setError] = useState(null);
   useEffect(() => {
     setLoading(true);
+    axios("/appsData.json")
+      .then((res) => setApps(res.data))
+      .catch((err) => setError(err))
+      .finally(() => setLoading(false));
   }, []);
 
-  return;
+  return { apps, loading, error };
 };
 
 export default useApps;

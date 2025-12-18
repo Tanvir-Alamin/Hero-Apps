@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png",
+    "image": "https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM",
     "title": "Instagram",
     "companyName": "Meta",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s",
+    "image": "https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo",
     "title": "Facebook",
     "companyName": "Meta",
     "id": 2,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://m.media-amazon.com/images/I/51rttY7a+9L.png",
+    "image": "https://play-lh.googleusercontent.com/7ghCqs4kKYrQpTECddnejlSeAXgpdiiKlIghuDR869MpF5msXdPsd3gqjC6lstD_NfJkmP0LAUJTty7UACcrLw=w240-h480-rw",
     "title": "Spotify",
     "companyName": "Spotify AB",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png",
+    "image": "https://play-lh.googleusercontent.com/ZU9cSsyIJZo6Oy7HTHiEPwZg0m2Crep-d5ZrfajqtsH-qgUXSqKpNA2FpPDTn-7qA5Q",
     "title": "Telegram",
     "companyName": "Telegram FZ-LLC",
     "id": 8,
@@ -177,6 +177,186 @@
       { "name": "3 star", "count": 50000 },
       { "name": "4 star", "count": 400000 },
       { "name": "5 star", "count": 1355000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/t-juVwXA8lDAk8uQ2L6d6K83jpgQoqmK1icB_l9yvhIAQ2QT_1XbRwg5IpY08906qEw",
+    "title": "Google Drive",
+    "companyName": "Google",
+    "id": 11,
+    "description": "Cloud storage and file sharing service.",
+    "size": 85,
+    "reviews": 1600000,
+    "ratingAvg": 4.6,
+    "downloads": "2000M",
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 12000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 1163000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/6CFQQ0b9r5fzF1v6f0gIirWsOGL7sGWkJifuUQxxhbCMcBx5aSG_cNXpjDKDn5c1jwjq",
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc.",
+    "id": 12,
+    "description": "Discover ideas for lifestyle and creativity.",
+    "size": 92,
+    "reviews": 900000,
+    "ratingAvg": 4.4,
+    "downloads": "800M",
+    "ratings": [
+      { "name": "1 star", "count": 12000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 45000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 583000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/A-Rnrh0J7iKmABskTonqFAANRLGTGUg_nuE4PEMYwJavL3nPt5uWsU2WO_DSgV_mOOM",
+    "title": "X (Twitter)",
+    "companyName": "X Corp",
+    "id": 13,
+    "description": "Real-time news and social networking.",
+    "size": 88,
+    "reviews": 2100000,
+    "ratingAvg": 4.1,
+    "downloads": "1300M",
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1240000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/et2mBcPlX10BHjyvlUCf90wAPbdIuaB_o1JhI4q3wHXcEq8MwKfsOYwpRW7aG2iXr_K05LVq6_LqUsNUWUt9BhM",
+    "title": "Microsoft OneNote",
+    "companyName": "Microsoft",
+    "id": 14,
+    "description": "Take notes and organize ideas digitally.",
+    "size": 105,
+    "reviews": 650000,
+    "ratingAvg": 4.5,
+    "downloads": "600M",
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 180000 },
+      { "name": "5 star", "count": 436000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "id": 15,
+    "description": "Stream movies and TV shows online.",
+    "size": 140,
+    "reviews": 3200000,
+    "ratingAvg": 4.6,
+    "downloads": "1800M",
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 2310000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/CDdttb_dBXoeygilKolRae_ideVLb2izBHmgZrLO1BKwVNvwMF-lkwR5yVrQ4goYEsjFVOBbUyk77493ap8XZnk",
+    "title": "Adobe Photoshop",
+    "companyName": "Adobe",
+    "id": 16,
+    "description": "Professional photo editing application.",
+    "size": 160,
+    "reviews": 1100000,
+    "ratingAvg": 4.7,
+    "downloads": "900M",
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 280000 },
+      { "name": "5 star", "count": 782000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/5ZOQbuxacVOWK6AM4Env-adyEWRUCJt0VrUl9bWKW4Z4qLSjJUBuMP8-dALMy9oWu530",
+    "title": "Airbnb",
+    "companyName": "Airbnb Inc.",
+    "id": 17,
+    "description": "Book unique places to stay worldwide.",
+    "size": 125,
+    "reviews": 1400000,
+    "ratingAvg": 4.6,
+    "downloads": "1000M",
+    "ratings": [
+      { "name": "1 star", "count": 18000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1007000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/yZsmiNjmji3ZoOuLthoVvptLB9cZ0vCmitcky4OUXNcEFV3IEQkrBD2uu5kuWRF5_ERA",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 18,
+    "description": "Video conferencing and online meetings.",
+    "size": 115,
+    "reviews": 1700000,
+    "ratingAvg": 4.4,
+    "downloads": "1200M",
+    "ratings": [
+      { "name": "1 star", "count": 35000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1160000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=s256-rw",
+    "title": "LinkedIn",
+    "companyName": "Microsoft",
+    "id": 19,
+    "description": "Professional networking and job search.",
+    "size": 100,
+    "reviews": 1900000,
+    "ratingAvg": 4.5,
+    "downloads": "1100M",
+    "ratings": [
+      { "name": "1 star", "count": 22000 },
+      { "name": "2 star", "count": 18000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 1440000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUmNZiASUdwHTjfJlXLBGc-P-TVxvf1d0lXQ&s",
+    "title": "Gmail",
+    "companyName": "Google",
+    "id": 20,
+    "description": "Email service with smart inbox features.",
+    "size": 80,
+    "reviews": 2600000,
+    "ratingAvg": 4.7,
+    "downloads": "3000M",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 2005000 }
     ]
   }
 ]

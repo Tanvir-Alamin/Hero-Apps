@@ -6,7 +6,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm w-[calc(100%-80px)] mx-auto">
+    <div className="navbar bg-white shadow-sm w-[calc(100%-80px)] mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +31,7 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                to=""
+                to="/"
                 className={({ isActive }) =>
                   isActive
                     ? "underline underline-offset-4 decoration-2 decoration-[#652EE3]"

@@ -12,8 +12,8 @@ const Footer = () => {
               <p className="font-bold text-3xl">Hero Apps</p>
             </aside>
 
-            <p className="w-130">
-              <span className="font-semibold text-xl"> Our</span> website is an
+            <p className="w-100 lg:w-130">
+              <span className="font-semibold text-xl "> Our</span> website is an
               all-in-one platform offering a variety of apps to simplify daily
               tasks. From productivity tools to fun and educational apps, each
               is designed for smooth performance and user-friendly experience.
