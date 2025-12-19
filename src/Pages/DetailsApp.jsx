@@ -7,20 +7,20 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 const DetailsApp = () => {
-  const [install, setInstall] = useState([]);
-
   const handleAdd = () => {
     let updateList = [];
     const isExist = JSON.parse(localStorage.getItem("installed"));
 
     if (isExist) {
+      // const isDuplicate = isExist.some((p) => p.id == location.state.id);
+      // if (isDuplicate) return alert("sorry bro");
+
       updateList = [...isExist, location.state];
     } else {
       updateList.push(location.state);
     }
     localStorage.setItem("installed", JSON.stringify(updateList));
   };
-  console.log(install);
 
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
