@@ -4,12 +4,25 @@ import reviewIcon from "../assets/icon-review.png";
 import ratingIcon from "../assets/icon-ratings.png";
 import { Bar, BarChart, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const DetailsApp = () => {
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
+    toast.info(`${title} is Installing ✔️✨`, {
+      theme: "colored",
+      autoClose: 2500,
+      onClose: () => {
+        toast.success(`${title} is Installed ✔️`, {
+          theme: "colored",
+          autoClose: 1000,
+        });
+      },
+    });
+
     setToggle(true);
   };
+
   const location = useLocation();
   const {
     title,
@@ -57,8 +70,11 @@ const DetailsApp = () => {
             </div>
           </div>
           <button
+            disabled={toggle}
             onClick={() => handleToggle()}
-            className=" btn mt-8 skeleton bg-green-400 p-3 text-2xl font-semibold text-white"
+            className={`btn mt-8 skeleton bg-green-400 p-3 text-2xl font-semibold text-white ${
+              toggle ? "opacity-35" : ""
+            }`}
           >
             {!toggle ? `Install Now (${size} MB)` : "Installed"}
           </button>
@@ -87,5 +103,4 @@ const DetailsApp = () => {
     </div>
   );
 };
-
 export default DetailsApp;

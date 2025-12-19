@@ -4,6 +4,7 @@ import Footer from "../Pages/Footer";
 import { Outlet } from "react-router";
 import useApps from "../Hooks/useApps";
 import Spinner from "../Pages/Spinner";
+import { ToastContainer } from "react-toastify";
 
 const Layout = () => {
   const { loading } = useApps();
@@ -17,6 +18,7 @@ const Layout = () => {
         <Outlet />
       </div>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 };
