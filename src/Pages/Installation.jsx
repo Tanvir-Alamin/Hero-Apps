@@ -2,7 +2,7 @@ import { Heading1 } from "lucide-react";
 import React, { useState } from "react";
 import downloadImage from "../assets/icon-downloads.png";
 import ratingAvg from "../assets/icon-ratings.png";
-import errorpic from "../assets/errorpic.jpg";
+import gifError from "../assets/gif.gif";
 import { Link } from "react-router";
 
 const Installation = () => {
@@ -28,7 +28,7 @@ const Installation = () => {
     return (
       <div className="mb-50">
         <div className="text-center mt-15 mb-10">
-          <h1 className="text-4xl font-bold pb-4">Your Installed Apps</h1>
+          <h1 className="text-4xl font-bold pb-4">No Installed Apps</h1>
           <h1 className=" mx-auto mt-2 text-[#627382]">
             Explore All Trending Apps on the Market developed by us
           </h1>
@@ -41,7 +41,7 @@ const Installation = () => {
             <option value={"price-desc"}>High - Low</option>
           </select>
         </div>
-        <img className="items-center mx-auto" src={errorpic} alt="" />
+        <img className="items-center w-100 mx-auto" src={gifError} alt="" />
         <div className=" flex items-center my-10 justify-center">
           <Link
             className="btn px-15 bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white "

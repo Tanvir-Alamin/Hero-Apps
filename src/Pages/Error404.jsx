@@ -1,12 +1,12 @@
 import React from "react";
-import err404 from "../assets/error-404.png";
+import err404 from "../assets/error404.gif";
 import { Link } from "react-router";
 
 const Error404 = () => {
   return (
-    <div>
+    <div className="w-[calc(100%-80px)] mx-auto">
       <div className=" flex justify-center">
-        <img className="" src={err404} alt="" />
+        <img className="w-120 my-10 mx-auto" src={err404} alt="" />
       </div>
       <div className=" flex justify-center my-8">
         <Link
