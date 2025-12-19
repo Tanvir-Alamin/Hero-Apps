@@ -8,6 +8,7 @@ import Installation from "./Pages/Installation.jsx";
 import Apps from "./Pages/Apps.jsx";
 import Error404 from "./Pages/Error404.jsx";
 import Spinner from "./Pages/Spinner.jsx";
+import DetailsApp from "./Pages/DetailsApp.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/*",
         Component: Error404,
+      },
+      {
+        path: "/details",
+        Component: DetailsApp,
       },
     ],
   },

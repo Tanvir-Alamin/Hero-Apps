@@ -4,9 +4,10 @@ import HomeApps from "../Component/HomeApps";
 import Spinner from "./Spinner";
 import useApps from "../Hooks/useApps";
 import Error404 from "./Error404";
+import DetailsApp from "./DetailsApp";
 
 const Home = () => {
-  const { loading, error } = useApps();
+  const { loading } = useApps();
   if (loading) {
     return <Spinner></Spinner>;
   } else {
@@ -14,6 +15,7 @@ const Home = () => {
       <div>
         <HeroItems></HeroItems>
         <HomeApps></HomeApps>
+        <DetailsApp></DetailsApp>
       </div>
     );
   }

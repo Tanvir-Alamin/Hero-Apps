@@ -23,28 +23,32 @@ const HomeApps = () => {
             key={app.id}
             className="card hover:-translate-y-3 transition-all hover:shadow-[#652EE3]  w-60 bg-white shadow-xl mx-auto "
           >
-            <figure>
-              <img
-                className="w-60 p-3 rounded-2xl"
-                src={app.image}
-                alt="app Image"
-              />
-            </figure>
-            <div className="">
-              <h2 className="font-semibold text-lg text-center">{app.title}</h2>
-              <div>
-                <div className="flex justify-between mx-3 py-3">
-                  <div className="flex items-center gap-1 px-1.5 rounded-lg bg-emerald-100">
-                    <img className="w-5 h-5" src={downloadImage} alt="" />
-                    <span>{app.downloads}</span>
-                  </div>
-                  <div className="flex items-center gap-1 px-1.5 rounded-lg bg-orange-200">
-                    <img className="w-5 h-5" src={ratingAvg} alt="" />
-                    <span>{app.ratingAvg}</span>
+            <Link to="/details" state={app}>
+              <figure>
+                <img
+                  className="w-60 p-3 rounded-2xl"
+                  src={app.image}
+                  alt="app Image"
+                />
+              </figure>
+              <div className="">
+                <h2 className="font-semibold text-lg text-center">
+                  {app.title}
+                </h2>
+                <div>
+                  <div className="flex justify-between mx-3 py-3">
+                    <div className="flex items-center gap-1 px-1.5 rounded-lg bg-emerald-100">
+                      <img className="w-5 h-5" src={downloadImage} alt="" />
+                      <span>{app.downloads}</span>
+                    </div>
+                    <div className="flex items-center gap-1 px-1.5 rounded-lg bg-orange-200">
+                      <img className="w-5 h-5" src={ratingAvg} alt="" />
+                      <span>{app.ratingAvg}</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         ))}
       </div>
