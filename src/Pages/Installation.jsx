@@ -1,10 +1,28 @@
 import { Heading1 } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import downloadImage from "../assets/icon-downloads.png";
 import ratingAvg from "../assets/icon-ratings.png";
+import errorpic from "../assets/errorpic.jpg";
+import { Link } from "react-router";
 
 const Installation = () => {
-  const installedApp = JSON.parse(localStorage.getItem("installed")) || [];
+  const [installedApp, setInstalledApp] = useState(
+    JSON.parse(localStorage.getItem("installed")) || []
+  );
+  const [sorted, setSorted] = useState("none");
+  const sortedItem = () => {
+    if (sorted == "price-asc") {
+      return [...installedApp].sort((a, b) => a.size - b.size);
+    } else if (sorted == "price-desc") {
+      return [...installedApp].sort((a, b) => b.size - a.size);
+    } else return installedApp;
+  };
+  const handleRemove = (id) => {
+    const filterData = installedApp.find((p) => p.id == id);
+    setInstalledApp(
+      JSON.stringify(localStorage.removeItem("installed", filterData)) || []
+    );
+  };
 
   if (installedApp.length == 0)
     return (
@@ -17,11 +35,20 @@ const Installation = () => {
         </div>
         <div className="flex  justify-between w-[calc(100%-80px)] mx-auto py-6">
           <div className="text-2xl font-semibold">0 Apps Found</div>
-          <select defaultValue="Sort Apps" className="select">
-            <option>Sort Apps</option>
-            <option>Low - High</option>
-            <option>High - Low</option>
+          <select defaultValue="sorted" className="select">
+            <option value={"none"}>Sort Apps</option>
+            <option value={"price-asc"}>Low - High</option>
+            <option value={"price-desc"}>High - Low</option>
           </select>
+        </div>
+        <img className="items-center mx-auto" src={errorpic} alt="" />
+        <div className=" flex items-center my-10 justify-center">
+          <Link
+            className="btn px-15 bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white "
+            to="/"
+          >
+            Home
+          </Link>
         </div>
       </div>
     );
@@ -36,16 +63,23 @@ const Installation = () => {
         </div>
         <div className="flex  justify-between w-[calc(100%-80px)] mx-auto py-6">
           <div className="text-2xl font-semibold">
-            {`(${installedApp.length})`} Apps Found
+            {`(${sortedItem().length})`} Apps Found
           </div>
-          <select defaultValue="Sort Apps" className="select">
-            <option>Sort Apps</option>
-            <option>Low - High</option>
-            <option>High - Low</option>
+          <select
+            onChange={(e) => setSorted(e.target.value)}
+            defaultValue="sorted"
+            className="select"
+          >
+            <option value={"none"}>Sort Apps</option>
+            <option value={"price-asc"}>Low - High</option>
+            <option value={"price-desc"}>High - Low</option>
           </select>
         </div>
-        {installedApp.map((data) => (
-          <div className="card py-2 w-[calc(100%-80px)] mx-auto items-center card-side bg-white shadow-lg my-10 px-5">
+        {sortedItem().map((data) => (
+          <div
+            key={data.id}
+            className="card py-2 w-[calc(100%-80px)] mx-auto items-center card-side bg-white shadow-lg my-10 px-5"
+          >
             <figure>
               <img
                 className="w-17 h-17 rounded-2xl"
@@ -71,7 +105,7 @@ const Installation = () => {
                 </div>
               </div>
 
-              <div className=" ">
+              <div onClick={() => handleRemove(data.id)} className=" ">
                 <button className="btn btn-primary bg-emerald-500 text-white font-bold">
                   Uninstall
                 </button>

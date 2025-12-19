@@ -7,14 +7,27 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 const DetailsApp = () => {
+  const [install, setInstall] = useState([]);
+  const location = useLocation();
+  const {
+    title,
+    image,
+    companyName,
+    downloads,
+    ratingAvg,
+    reviews,
+    size,
+    description,
+    id,
+    ratings,
+  } = location.state;
+
+  const isExist = JSON.parse(localStorage.getItem("installed")) || [];
+  const isDuplicate = isExist.some((p) => p.id == location.state.id);
+
   const handleAdd = () => {
     let updateList = [];
-    const isExist = JSON.parse(localStorage.getItem("installed"));
-
     if (isExist) {
-      // const isDuplicate = isExist.some((p) => p.id == location.state.id);
-      // if (isDuplicate) return alert("sorry bro");
-
       updateList = [...isExist, location.state];
     } else {
       updateList.push(location.state);
@@ -37,20 +50,12 @@ const DetailsApp = () => {
 
     setToggle(true);
   };
+  // const [gg, setGg] = useState(false);
 
-  const location = useLocation();
-  const {
-    title,
-    image,
-    companyName,
-    downloads,
-    ratingAvg,
-    reviews,
-    size,
-    description,
-    id,
-    ratings,
-  } = location.state;
+  // const bhai = () => {
+  //   alert("kire bhhai");
+  //   setGg(true);
+  // };
 
   return (
     <div className=" w-[calc(100%-80px)] mx-auto">
@@ -85,7 +90,7 @@ const DetailsApp = () => {
             </div>
           </div>
           <button
-            disabled={toggle}
+            disabled={isDuplicate}
             onClick={() => {
               handleToggle();
               setInstall(...install, location.state);
@@ -95,7 +100,7 @@ const DetailsApp = () => {
               toggle ? "opacity-35" : ""
             }`}
           >
-            {!toggle ? `Install Now (${size} MB)` : "Installed"}
+            {!isDuplicate ? `Install Now (${size} MB)` : "Installed"}
           </button>
         </div>
       </div>
