@@ -7,9 +7,24 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 const DetailsApp = () => {
+  const [install, setInstall] = useState([]);
+
+  const handleAdd = () => {
+    let updateList = [];
+    const isExist = JSON.parse(localStorage.getItem("installed"));
+
+    if (isExist) {
+      updateList = [...isExist, location.state];
+    } else {
+      updateList.push(location.state);
+    }
+    localStorage.setItem("installed", JSON.stringify(updateList));
+  };
+  console.log(install);
+
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
-    toast.info(`${title} is Installing ✔️✨`, {
+    toast.info(`${title} is Installing ✨`, {
       theme: "colored",
       autoClose: 2500,
       onClose: () => {
@@ -71,7 +86,11 @@ const DetailsApp = () => {
           </div>
           <button
             disabled={toggle}
-            onClick={() => handleToggle()}
+            onClick={() => {
+              handleToggle();
+              setInstall(...install, location.state);
+              handleAdd();
+            }}
             className={`btn mt-8 skeleton bg-green-400 p-3 text-2xl font-semibold text-white ${
               toggle ? "opacity-35" : ""
             }`}

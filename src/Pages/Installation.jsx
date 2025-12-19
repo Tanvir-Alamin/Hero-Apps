@@ -1,7 +1,17 @@
+import { Heading1 } from "lucide-react";
 import React from "react";
 
 const Installation = () => {
-  return <div>im from installation</div>;
+  const installedApp = JSON.parse(localStorage.getItem("installed"));
+  console.log(installedApp);
+
+  return (
+    <div>
+      {installedApp.map((data) => (
+        <h1>{data.title}</h1>
+      ))}
+    </div>
+  );
 };
 
 export default Installation;

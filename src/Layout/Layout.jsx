@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Navbar from "../Pages/Navbar";
 import Footer from "../Pages/Footer";
 import { Outlet } from "react-router";
@@ -15,7 +15,9 @@ const Layout = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar></Navbar>
       <div className="flex-1">
-        <Outlet />
+        <Suspense fallback={<Spinner></Spinner>}>
+          <Outlet />
+        </Suspense>
       </div>
       <Footer></Footer>
       <ToastContainer />
