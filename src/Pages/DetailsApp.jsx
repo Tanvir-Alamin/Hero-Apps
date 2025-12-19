@@ -1,10 +1,15 @@
-import React from "react";
-import { Link, useLocation } from "react-router";
+import { useLocation } from "react-router";
 import downloadIcon from "../assets/icon-downloads.png";
 import reviewIcon from "../assets/icon-review.png";
 import ratingIcon from "../assets/icon-ratings.png";
+import { Bar, BarChart, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
+import { useState } from "react";
 
 const DetailsApp = () => {
+  const [toggle, setToggle] = useState(false);
+  const handleToggle = () => {
+    setToggle(true);
+  };
   const location = useLocation();
   const {
     title,
@@ -51,10 +56,31 @@ const DetailsApp = () => {
               <h1 className="text-3xl font-bold">{reviews}</h1>
             </div>
           </div>
-          <Link className="btn mt-8  bg-green-400 text-2xl font-semibold text-white">{`Install Now (${size} MB)`}</Link>
+          <button
+            onClick={() => handleToggle()}
+            className=" btn mt-8 skeleton bg-green-400 p-3 text-2xl font-semibold text-white"
+          >
+            {!toggle ? `Install Now (${size} MB)` : "Installed"}
+          </button>
         </div>
       </div>
-      <div className=" mt-20 space-y-5">
+      <div className="mt-20 flex justify-center">
+        <BarChart
+          width={1000}
+          height={250}
+          data={[...ratings].reverse()}
+          layout="vertical"
+          margin={{ top: 0, right: 50, left: 20, bottom: 0 }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis type="number" />
+          <YAxis dataKey="name" type="category" />
+          <Tooltip />
+          <Bar dataKey="count" fill="#FFA500" />
+        </BarChart>
+      </div>
+
+      <div className=" mt-20 mb-20 space-y-5">
         <h1 className="text-2xl font-bold">Description</h1>
         <h1 className="text-gray-500">{description}</h1>
       </div>
