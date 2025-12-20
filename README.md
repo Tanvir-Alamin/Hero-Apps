@@ -26,14 +26,17 @@ This project was built with guidance and inspiration from **Programming Hero**, 
 
 Replace these image URLs with your own hosted screenshots when ready.
 
-### Home Page  
-![Home Screenshot](`/src/assets/hero-apps-com.netlify.app_.png`)
+### Home Page
 
-### Installed Apps Page  
-![Installed Apps Screenshot](`/src/assets/installation.png`)
+![Home Screenshot](/src/assets/hero-apps-com.netlify.app_.png)
 
-### Details Page  
-![Details Screenshot](`/src/assets/details.ss.png`)
+### Installed Apps Page
+
+![Installed Apps Screenshot](/src/assets/installation.png)
+
+### Details Page
+
+![Details Screenshot](/src/assets/details.ss.png)
 
 ---
 
@@ -67,14 +70,13 @@ Replace these image URLs with your own hosted screenshots when ready.
 
 ## ✨ Key Features
 
-- Clean & responsive UI  
-- Smooth page navigation  
-- Interactive charts & statistics  
-- Toast notifications for user actions  
+- Clean & responsive UI
+- Smooth page navigation
+- Interactive charts & statistics
+- Toast notifications for user actions
 - Modern React best practices
 
 ---
-
 
 ## 🙌 Acknowledgement
 
