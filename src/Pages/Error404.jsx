@@ -1,5 +1,5 @@
 import React from "react";
-import err404 from "../assets/error404.gif";
+import err404 from "../assets/space-404.gif";
 import { Link } from "react-router";
 
 const Error404 = () => {

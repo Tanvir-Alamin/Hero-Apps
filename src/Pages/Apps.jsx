@@ -7,6 +7,7 @@ import Spinner from "./Spinner";
 
 const Apps = () => {
   const { apps, loading } = useApps();
+
   const [search, setSearch] = useState("");
   const trim = search.trim("").toLowerCase();
   const SearchedData = trim

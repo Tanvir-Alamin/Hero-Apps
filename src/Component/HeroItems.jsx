@@ -20,14 +20,14 @@ const HeroItems = () => {
           make an impact.
         </p>
         <div className="my-10">
-          <Link
+          <Link target="_blank"
             to="https://play.google.com/store/games?hl=en"
             className="btn py-7 px-8 text-xl mx-3 hover:skeleton hover-3d "
           >
             <img className="w-8" src={playStore} alt="play store icon" />
             Google Play
           </Link>
-          <Link
+          <Link  target="_blank"
             to="https://apps.apple.com/us/iphone/apps"
             className="btn py-7 px-8 text-xl mx-3 hover:skeleton hover-3d "
           >

@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 const DetailsApp = () => {
   const [install, setInstall] = useState([]);
   const location = useLocation();
+
   const {
     title,
     image,
@@ -21,7 +22,6 @@ const DetailsApp = () => {
     id,
     ratings,
   } = location.state;
-
   const isExist = JSON.parse(localStorage.getItem("installed")) || [];
   const isDuplicate = isExist.some((p) => p.id == location.state.id);
 
@@ -39,7 +39,7 @@ const DetailsApp = () => {
   const handleToggle = () => {
     toast.info(`${title} is Installing ✨`, {
       theme: "colored",
-      autoClose: 2500,
+      autoClose: 1000,
       onClose: () => {
         toast.success(`${title} is Installed ✔️`, {
           theme: "colored",

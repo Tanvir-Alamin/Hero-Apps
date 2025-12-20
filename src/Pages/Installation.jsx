@@ -2,13 +2,15 @@ import { Heading1 } from "lucide-react";
 import React, { useState } from "react";
 import downloadImage from "../assets/icon-downloads.png";
 import ratingAvg from "../assets/icon-ratings.png";
-import gifError from "../assets/gif.gif";
-import { Link } from "react-router";
+
+import NoAppError from "./NoAppError";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const [installedApp, setInstalledApp] = useState(
     JSON.parse(localStorage.getItem("installed")) || []
   );
+
   const [sorted, setSorted] = useState("none");
   const sortedItem = () => {
     if (sorted == "price-asc") {
@@ -18,39 +20,26 @@ const Installation = () => {
     } else return installedApp;
   };
   const handleRemove = (id) => {
-    const filterData = installedApp.find((p) => p.id == id);
-    setInstalledApp(
-      JSON.stringify(localStorage.removeItem("installed", filterData)) || []
-    );
-  };
+const items =
+    JSON.parse(localStorage.getItem("installed")) || [];
+     const updatedItems = items.filter(
+    (item) => item.id !== id
+  );
+    localStorage.setItem(
+    "installed",
+    JSON.stringify(updatedItems)
+  );
+  setInstalledApp(updatedItems)
+  toast.success("Uninstall Success", {
+    theme:"colored",
+    autoClose: 1000,
+  })
 
+  };
+  
   if (installedApp.length == 0)
     return (
-      <div className="mb-50">
-        <div className="text-center mt-15 mb-10">
-          <h1 className="text-4xl font-bold pb-4">No Installed Apps</h1>
-          <h1 className=" mx-auto mt-2 text-[#627382]">
-            Explore All Trending Apps on the Market developed by us
-          </h1>
-        </div>
-        <div className="flex  justify-between w-[calc(100%-80px)] mx-auto py-6">
-          <div className="text-2xl font-semibold">0 Apps Found</div>
-          <select defaultValue="sorted" className="select">
-            <option value={"none"}>Sort Apps</option>
-            <option value={"price-asc"}>Low - High</option>
-            <option value={"price-desc"}>High - Low</option>
-          </select>
-        </div>
-        <img className="items-center w-100 mx-auto" src={gifError} alt="" />
-        <div className=" flex items-center my-10 justify-center">
-          <Link
-            className="btn px-15 bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white "
-            to="/"
-          >
-            Home
-          </Link>
-        </div>
-      </div>
+    <NoAppError></NoAppError>
     );
   else
     return (
